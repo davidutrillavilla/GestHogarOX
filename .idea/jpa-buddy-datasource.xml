@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="15ec0f5b-0ec9-45e4-a181-200819465d55" name="GestHogarOX_Conexion" url="jdbc:postgresql://postgres/GestHogarOX_Conexion" driverClass="org.postgresql.Driver" />
+    </data-sources>
+  </component>
+</project>

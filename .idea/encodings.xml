@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dutrilla/GestHogarOX/accion/GrabarGasto.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dutrilla/GestHogarOX/dao/DataBaseManager.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dutrilla/GestHogarOX/dao/QueryConstants.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dutrilla/GestHogarOX/dao/UtilGestHogarDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dutrilla/GestHogarOX/modelo/Ciudad.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dutrilla/GestHogarOX/modelo/Establecimiento.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dutrilla/GestHogarOX/modelo/Gasto.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dutrilla/GestHogarOX/modelo/TipoComercio.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dutrilla/GestHogarOX/modelo/UserPassword.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dutrilla/GestHogarOX/modelo/Usuario.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dutrilla/GestHogarOX/modelo/dto/CiudadDto.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dutrilla/GestHogarOX/modelo/dto/EstablecimientoDto.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dutrilla/GestHogarOX/modelo/dto/GastoDto.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dutrilla/GestHogarOX/modelo/dto/ResumenMensualTotalDto.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dutrilla/GestHogarOX/modelo/dto/UsuarioDto.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dutrilla/GestHogarOX/service/GeneralService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dutrilla/GestHogarOX/util/GastoUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/naviox-users.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/naviox.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/xava.properties" charset="UTF-8" />
+  </component>
+</project>

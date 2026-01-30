@@ -1,0 +1,97 @@
+<?xml version = "1.0" encoding = "ISO-8859-1"?>
+
+<!DOCTYPE controladores SYSTEM "dtds/controladores.dtd">
+
+<controladores>
+    
+ <!--   Variable de entorno: -->
+    <var-entorno nombre="GestHogarOX_ANYO_DEFECTO" valor="2025"/>
+    
+    <controlador nombre="Gasto" >
+        
+        <accion nombre="nuevo" clase = "org.dutrilla.GestHogarOX.accion.NuevoGasto" modo = "list">
+    
+            <poner propiedad="restoreModel" valor="false"/>
+            
+        </accion>
+    
+        <accion nombre="grabar" clase = "org.dutrilla.GestHogarOX.accion.GrabarGasto" modo = "detail"/>
+        
+        <accion nombre="eliminar" clase= "org.dutrilla.GestHogarOX.accion.EliminarGasto" modo = "detail"/>
+    
+    </controlador>
+    
+    <controlador nombre="Establecimiento">
+        
+        <accion nombre="nuevo" por-defecto="nunca" icono="library-plus" atajo-de-teclado="Control-N"
+                clase = "org.dutrilla.GestHogarOX.accion.NuevoEstablecimiento" modo = "list">
+            
+            <poner propiedad="restoreModel" valor="false"/>
+        
+        </accion>
+        
+        <accion nombre="grabar" clase = "org.dutrilla.GestHogarOX.accion.GrabarEstablecimiento" modo = "detail"/>
+    
+        <accion nombre="eliminar" clase= "org.dutrilla.GestHogarOX.accion.EliminarEstablecimiento" modo = "detail"/>
+    
+    </controlador>
+    
+    <controlador nombre="Ciudad">
+    
+        <accion nombre="nuevo" por-defecto="nunca" icono="library-plus" atajo-de-teclado="Control-N"
+                clase = "org.dutrilla.GestHogarOX.accion.NuevaCiudad" modo = "list">
+        
+            <poner propiedad="restoreModel" valor="false"/>
+    
+        </accion>
+    
+        <accion nombre="grabar" clase = "org.dutrilla.GestHogarOX.accion.GrabarCiudad" modo = "detail"/>
+    
+        <accion nombre="eliminar" clase= "org.dutrilla.GestHogarOX.accion.EliminarCiudad" modo = "detail"/>
+        
+    </controlador>
+    
+    <controlador nombre="Usuario">
+        
+        <accion nombre="nuevo" por-defecto="nunca" icono="library-plus" atajo-de-teclado="Control-N" clase = "org.dutrilla.GestHogarOX.accion.NuevoUsuario" modo = "list">
+            
+            <poner propiedad="restoreModel" valor="false"/>
+            
+        </accion>
+    
+        <accion nombre="grabar" clase = "org.dutrilla.GestHogarOX.accion.GrabarUsuario" modo = "detail"/>
+    
+        <accion nombre="eliminar" clase= "org.dutrilla.GestHogarOX.accion.EliminarUsuario" modo = "detail"/>
+        
+    </controlador>
+    
+    <controlador nombre="ResumenMensualTotal">
+        
+        <accion nombre="introducirDatosCalculo" por-defecto="nunca" icono="library-plus" clase = "org.dutrilla.GestHogarOX.accion.IntroducirDatosCalculo" modo = "list">
+            
+            <poner propiedad="restoreModel" valor="false"/>
+            
+        </accion>
+    
+        <accion nombre="calcular" clase = "org.dutrilla.GestHogarOX.accion.CalcularResumenMensual" modo = "detail"/>
+    
+        <accion nombre="eliminar" clase= "org.dutrilla.GestHogarOX.accion.EliminarResumenMensual" modo = "detail"/>
+    
+    </controlador>
+    
+    <controlador nombre="TestCaptura">
+        
+        <accion nombre="capturarTest" clase = "org.dutrilla.GestHogarOX.accion.CapturarTest"/>
+        
+    </controlador>
+    
+<!--    <controlador nombre="TableroMando">-->
+<!--        -->
+<!--        <accion nombre="visulalizar" clase="org.example.GestHogarOX.accion.VisualizarGráficos">-->
+<!--            -->
+<!--        </accion>-->
+<!--        -->
+<!--    </controlador>-->
+    
+    
+</controladores>

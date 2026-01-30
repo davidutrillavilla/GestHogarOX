@@ -1,0 +1,51 @@
+<?xml version = "1.0" encoding = "ISO-8859-1"?>
+
+<!DOCTYPE aplicacion SYSTEM "dtds/aplicacion.dtd">
+
+<aplicacion nombre="GestHogarOX">
+ 
+	<modulo nombre="Gasto">
+		<modelo nombre="Gasto"/>
+		<vista nombre="gasto"/>
+		<tab nombre="gasto"/>
+		<controlador nombre="Gasto"/>
+	</modulo>
+ 
+	<modulo nombre="Ciudad">
+        <modelo nombre="Ciudad"/>
+        <tab nombre="ciudad"/>
+        <controlador nombre="Ciudad"/>
+    </modulo>
+        
+    <modulo nombre="Usuario">
+        <modelo nombre="Usuario"/>
+        <tab nombre="usuario"/>
+        <controlador nombre="Usuario"/>
+    </modulo>
+    
+    <modulo nombre="Establecimiento">
+        <modelo nombre="Establecimiento"/>
+        <tab nombre="establecimiento"/>
+        <controlador nombre="Establecimiento"/>
+    </modulo>
+    
+    <modulo nombre="ResumenMensualTotal">
+        <modelo nombre="ResumenMensualTotal"/>
+        <vista nombre="resumenMensualTotal"/>
+        <tab nombre="resumenMensualTotal"/>
+        <controlador nombre="ResumenMensualTotal"/>
+    </modulo>
+    
+    <modulo nombre="Test">
+        <modelo nombre="TestModelo"/>
+        <controlador nombre="TestCaptura"/>
+    </modulo>
+    
+<!--    <modulo nombre="ProcesadorDatos">-->
+<!--        <modelo nombre="TableroMando"/>-->
+<!--        <vista nombre="tableroMando"/>-->
+<!--        <controlador nombre="TableroMando"/>-->
+<!--    </modulo>-->
+<!--		-->
+</aplicacion>
+

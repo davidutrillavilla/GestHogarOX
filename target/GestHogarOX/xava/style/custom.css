@@ -1,0 +1,102 @@
+/* ============================================================
+   ARCHIVO DE PERSONALIZACIÓN VISUAL PARA OPENXAVA (2025)
+   ============================================================ */
+
+/* 1. FUENTES Y CUERPO GENERAL */
+body, .ox-main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;          /* Tamaño de fuente base para toda la aplicación */
+    background-color: #f8f9fa; /* Color de fondo de la aplicación */
+}
+
+/* 2. CAMPOS DE ENTRADA (EDITORES) */
+.ox-editor, .form-control, select.ox-editor {
+    font-size: 1.1rem !important;    /* Tamaño de letra dentro de los campos */
+    padding: 8px 12px !important;    /* Espaciado interno de los campos */
+    border-radius: 6px !important;   /* Redondeo de las esquinas */
+    border: 1px solid #ced4da;       /* Color del borde */
+    color: #495057;                  /* Color del texto al escribir */
+    height: auto !important;         /* Ajuste de altura automática */
+}
+
+/* Efecto cuando el cursor entra en un campo (Focus) */
+.ox-editor:focus {
+    border-color: #80bdff !important;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25) !important;
+}
+
+/* 3. ETIQUETAS DE LOS CAMPOS (LABELS) */
+.ox-label, .ox-label-link {
+    font-size: 5rem !important;      /* Tamaño de la fuente de las etiquetas */
+    font-weight: 600 !important;     /* Grosor de la letra (Negrita) */
+    color: #333333 !important;       /* Color de la etiqueta */
+    margin-bottom: 5px;              /* Espacio entre etiqueta y campo */
+}
+
+/* 4. BOTONES DE ACCIÓN */
+.ox-button, .btn-primary {
+    font-size: 1rem !important;      /* Tamaño letra del botón */
+    padding: 10px 20px !important;   /* Tamaño del botón */
+    text-transform: uppercase;       /* Texto en mayúsculas */
+    letter-spacing: 1px;             /* Espaciado entre letras */
+    transition: all 0.3s ease;       /* Animación suave al pasar el ratón */
+}
+
+/* 5. VISTA DE LISTA (TABLAS) */
+.ox-list {
+    font-size: 0.95rem !important;   /* Tamaño de letra en las filas de la tabla */
+    border-collapse: separate;
+    border-spacing: 0 5px;           /* Espaciado entre filas */
+}
+
+/* Cabecera de la tabla */
+.ox-list-header th {
+    background-color: #343a40 !important; /* Color de fondo de la cabecera */
+    color: white !important;              /* Color de texto de la cabecera */
+    padding: 12px !important;
+}
+
+/* Filas al pasar el ratón */
+.ox-list tr:hover {
+    background-color: #e9ecef !important; /* Color de resaltado al pasar el ratón */
+}
+
+/* 6. SECCIONES Y MARCOS (FRAMES) */
+.ox-frame {
+    border: 1px solid #dee2e6 !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important; /* Sombra suave para los marcos */
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.ox-frame-title {
+    font-size: 1.2rem !important;    /* Tamaño del título de las secciones */
+    color: #007bff !important;       /* Color del título de la sección */
+    padding: 10px;
+}
+
+/* 7. PESTAÑAS (TABS) */
+.nav-tabs .nav-link {
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.nav-tabs .nav-link.active {
+    color: #007bff !important;       /* Color de la pestaña activa */
+    border-bottom: 3px solid #007bff !important; /* Línea inferior en la pestaña activa */
+}
+
+/* golden.css */
+
+@import 'light.css';
+
+:root {
+
+	--my-gold: #cda434;
+	--my-highlight: var(--my-gold);
+
+	/* Modules left menu */
+	--modules-list-color: var(--my-lightgray);
+	--modules-list-background: var(--my-gold);
+
+}
