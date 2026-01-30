@@ -1,4 +1,4 @@
-package org.dutrilla.GestHogarOX.modelo;
+package org.dutrilla.GestHogarOX.modelo.enums;
 
 import lombok.Getter;
 

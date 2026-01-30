@@ -2,6 +2,7 @@ package org.dutrilla.GestHogarOX.modelo;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.dutrilla.GestHogarOX.modelo.enums.Mes;
 import org.openxava.annotations.*;
 
 import javax.persistence.*;
