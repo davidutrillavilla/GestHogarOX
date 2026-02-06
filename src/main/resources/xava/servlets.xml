@@ -1,0 +1,6 @@
+<?xml version = "1.0" encoding = "ISO-8859-1"?>
+
+<servlets>
+    <!-- Esta acción se ejecutará UNA VEZ por sesión al entrar a la APP -->
+    <on-init-session-action controller="SesionUsuario" action="inicializar"/>
+</servlets>

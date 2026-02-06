@@ -3,9 +3,14 @@
 <!DOCTYPE controladores SYSTEM "dtds/controladores.dtd">
 
 <controladores>
-    
- <!--   Variable de entorno: -->
-    <var-entorno nombre="GestHogarOX_ANYO_DEFECTO" valor="2025"/>
+   
+    <!-- Aquí definimos la acción de inicio de sesión -->
+    <controlador nombre="SesionUsuario">
+      
+        <accion nombre="inicializar" oculta="true"
+                clase="org.dutrilla.GestHogarOX.accion.SetFechaActual" />
+        
+    </controlador>
     
     <controlador nombre="Gasto" >
         
