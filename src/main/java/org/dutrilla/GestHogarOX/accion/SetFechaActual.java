@@ -2,7 +2,6 @@ package org.dutrilla.GestHogarOX.accion;
 
 import org.openxava.actions.BaseAction;
 
-
 public class SetFechaActual extends BaseAction {
 
     public void execute() throws Exception {
@@ -10,11 +9,10 @@ public class SetFechaActual extends BaseAction {
         int ejercicio = java.time.LocalDate.now().getYear();
 
         int mes = java.time.LocalDate.now().getMonthValue();
-        // Esto crea y guarda la variable en la sesión aunque no esté en el XML
+
         getContext().put(getManager().getApplicationName(), null, "ejercicioActual", ejercicio);
 
         getContext().put(getManager().getApplicationName(), null, "mesActual", mes);
-
 
     }
 }
