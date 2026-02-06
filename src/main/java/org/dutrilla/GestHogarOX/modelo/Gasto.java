@@ -3,6 +3,7 @@ package org.dutrilla.GestHogarOX.modelo;
 import groovy.util.logging.Slf4j;
 import lombok.Getter;
 import lombok.Setter;
+import org.dutrilla.GestHogarOX.filtros.FiltroSistemaEjercicioMes;
 import org.dutrilla.GestHogarOX.modelo.enums.Mes;
 import org.dutrilla.GestHogarOX.modelo.enums.SeccionGasto;
 import org.dutrilla.GestHogarOX.modelo.enums.TipoComercio;
@@ -14,7 +15,9 @@ import java.time.LocalDate;
 import java.util.UUID;
 
 
-@Tab(name = "gasto", properties = "nombreUsuario, ejercicio, mes, fecha, seccionGasto, tipoComercio, nombreEstablecimiento, nombreCiudad, descripcion, importeCompra")
+@Tab(name = "gasto", properties = "nombreUsuario, ejercicio, mes, fecha, seccionGasto, tipoComercio, nombreEstablecimiento, nombreCiudad, descripcion, importeCompra",
+     filter = FiltroSistemaEjercicioMes.class,
+     baseCondition = "${ejercicio} = ? and ${mes} = ?")
 @View(name = "gasto", members = "ejercicio, mesEnum, fecha;" +
                                 ";" +
                                 "usuario;" +
