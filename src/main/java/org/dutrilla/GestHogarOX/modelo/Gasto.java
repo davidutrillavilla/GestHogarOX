@@ -14,7 +14,6 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.UUID;
 
-
 @Tab(name = "gasto", properties = "nombreUsuario, ejercicio, mes, fecha, seccionGasto, tipoComercio, nombreEstablecimiento, nombreCiudad, descripcion, importeCompra",
      filter = FiltroSistemaEjercicioMes.class,
      baseCondition = "${ejercicio} = ? and ${mes} = ?")
@@ -35,7 +34,6 @@ import java.util.UUID;
                                 "descripcion" +
                                 ";" +
                                 "importeCompra;"
-
 )
 @Entity
 @Slf4j
@@ -113,6 +111,5 @@ public class Gasto implements Serializable {
 
     @Column(name = "descripcion", length = 200)
     private String descripcion;
-
 
 }

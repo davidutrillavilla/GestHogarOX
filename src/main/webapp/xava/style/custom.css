@@ -100,3 +100,66 @@ body, .ox-main {
 	--modules-list-background: var(--my-gold);
 
 }
+
+/* Oculta el enlace del menú para el módulo MuestraGastosPorMes */
+/* Puede que necesites inspeccionar el elemento en tu navegador para el selector exacto */
+li a[href*="m/MuestraGastosPorMes"] {
+    display: none !important;
+}
+
+/* Estilo general del contenedor del login */
+#sign_in_box {
+    /* Centra la caja de login en la pantalla si lo deseas */
+    /* position: relative; top: 40%; */
+    /* Añade algo de padding y sombra para que destaque */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: white; /* Asume un fondo blanco para la caja */
+    width: 300px; /* Ajusta el ancho de la caja de login */
+    margin: auto; /* Centra horizontalmente */
+}
+
+/* 3. ETIQUETAS DE LOS CAMPOS (LABELS) en el login */
+/* El login usa etiquetas con la clase .ox-label */
+.ox-label {
+    font-size: 1rem !important; /* Vuelve a un tamaño razonable para las etiquetas */
+    font-weight: 600 !important;
+    color: #333333 !important;
+    margin-bottom: 5px;
+    display: block; /* Asegura que cada etiqueta esté en su propia línea */
+}
+
+/* 2. CAMPOS DE ENTRADA (EDITORES) en el login */
+/* Los campos de login también usan la clase .ox-editor */
+.ox-editor {
+    font-size: 1rem !important; /* Vuelve a un tamaño razonable para los campos */
+    padding: 8px 12px !important;
+    border-radius: 6px !important;
+    border: 1px solid #ced4da;
+    color: #495057;
+    width: 100% !important; /* Ocupa todo el ancho de la caja */
+    box-sizing: border-box; /* Asegura que el padding no añada ancho extra */
+    height: auto !important;
+}
+
+/* 4. BOTONES DE ACCIÓN en el login */
+/* El botón de login usa un selector específico en algunas versiones de OpenXava/NaviOX */
+.ox-button, .btn-primary, input[type="submit"] {
+    font-size: 1rem !important;
+    padding: 10px 20px !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    /* Añade estilos de botón bonitos, por ejemplo: */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px; /* Espacio encima del botón */
+}
+
+.ox-button:hover, .btn-primary:hover, input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
