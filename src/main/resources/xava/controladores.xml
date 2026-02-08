@@ -83,6 +83,26 @@
         <accion nombre="eliminar" clase= "org.dutrilla.GestHogarOX.accion.EliminarResumenMensual" modo = "detail"/>
     
     </controlador>
+  
+    <controlador nombre="GastoFiltradoMes">
+        
+        <accion nombre="alIniciar" oculta="true" al-iniciar="true"
+                clase="org.dutrilla.GestHogarOX.accion.AlIniciarFiltroMensual"/>
+        
+        <accion nombre="buscar" clase="org.dutrilla.GestHogarOX.accion.FiltrandoPorMes">
+            
+            <poner propiedad="siguienteModulo" valor="Z_out"/>
+            
+        </accion>
+        
+    </controlador>
+    
+    <controlador nombre="VolverModuloAnterior">
+        
+        <accion nombre="volver" icono="arrow-left" modo="list"
+                clase="org.dutrilla.GestHogarOX.accion.VolverModuloAnterior"/>
+        
+    </controlador>
     
     <controlador nombre="TestCaptura">
         

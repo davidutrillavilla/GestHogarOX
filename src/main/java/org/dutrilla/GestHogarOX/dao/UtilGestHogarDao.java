@@ -5,7 +5,9 @@ import com.libreriaGeneral.dao.QueryConstants;
 import com.libreriaGeneral.dao.UtilDao;
 import com.libreriaGeneral.util.ConstantesGenerales;
 
+import org.dutrilla.GestHogarOX.modelo.Gasto;
 import org.dutrilla.GestHogarOX.modelo.Resultado;
+import org.dutrilla.GestHogarOX.modelo.dto.MensualidadDto;
 import org.dutrilla.GestHogarOX.modelo.dto.ResumenMensualTotalDto;
 
 import javax.persistence.PrePersist;

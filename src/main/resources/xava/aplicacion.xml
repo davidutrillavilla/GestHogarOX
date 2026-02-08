@@ -35,7 +35,18 @@
         <tab nombre="resumenMensualTotal"/>
         <controlador nombre="ResumenMensualTotal"/>
     </modulo>
+
+    <modulo nombre="ConsultarPorMes">
+        <modelo nombre="FiltroMensual"/>
+        <vista nombre="filtro"/>
+        <controlador nombre="GastoFiltradoMes"/>
+    </modulo>
     
+    <modulo nombre="Z_out">
+        <modelo nombre="Gasto"/>
+        <controlador nombre="VolverModuloAnterior"/>
+    </modulo>
+
     <modulo nombre="Test">
         <modelo nombre="TestModelo"/>
         <controlador nombre="TestCaptura"/>
