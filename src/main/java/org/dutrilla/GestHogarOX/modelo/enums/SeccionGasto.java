@@ -25,7 +25,9 @@ public enum SeccionGasto {
 
     SEGUROS("SE", 10),
 
-    FARMACIA("FA", 11);
+    FARMACIA("FA", 11),
+
+    OPTICA("OP", 12);
 
     private String codigo;
 

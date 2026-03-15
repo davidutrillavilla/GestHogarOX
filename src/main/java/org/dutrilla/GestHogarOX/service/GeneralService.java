@@ -2,8 +2,10 @@ package org.dutrilla.GestHogarOX.service;
 
 import com.libreriaGeneral.dao.QueryConstants;
 import com.libreriaGeneral.dao.UtilDao;
+import com.libreriaGeneral.util.exception.ValidationErrorException;
 import org.dutrilla.GestHogarOX.modelo.*;
 import org.dutrilla.GestHogarOX.modelo.dto.*;
+import org.dutrilla.GestHogarOX.service.validador.ValidadorGasto;
 import org.dutrilla.GestHogarOX.util.GastoUtil;
 import org.dutrilla.GestHogarOX.util.CiudadUtil;
 import org.dutrilla.GestHogarOX.util.EstablecimientoUtil;
@@ -15,7 +17,9 @@ public enum GeneralService {
 
     INSTANCE;
 
-    public Response grabarGasto(GastoDto gastoDto) throws SQLException, IllegalAccessException {
+    public Response grabarGasto(GastoDto gastoDto) throws SQLException, IllegalAccessException, ValidationErrorException {
+
+        ValidadorGasto.INSTANCE.validate(gastoDto);
 
         Gasto gasto = GastoUtil.INSTANCE.crearGasto(gastoDto);
 

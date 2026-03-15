@@ -9,6 +9,7 @@ import javax.persistence.Column;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 
+@View(members = "ejercicio; mes;")
 @View(name = "filtro", members = "ejercicio; mes;")
 @Getter @Setter
 public class FiltroMensual {

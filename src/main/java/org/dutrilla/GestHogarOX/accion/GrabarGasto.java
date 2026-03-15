@@ -2,18 +2,15 @@ package org.dutrilla.GestHogarOX.accion;
 
 import com.libreriaGeneral.OX.acccionOX.OXServiceAction;
 import com.libreriaGeneral.util.ConstantesGenerales;
-
 import com.libreriaGeneral.util.GeneralUtil;
 import lombok.Getter;
 import lombok.Setter;
-
+import lombok.SneakyThrows;
 import org.dutrilla.GestHogarOX.modelo.dto.GastoDto;
-import org.dutrilla.GestHogarOX.service.GeneralService;;
+import org.dutrilla.GestHogarOX.service.GeneralService;
 
 import javax.ws.rs.core.Response;
-import java.math.BigDecimal;
 import java.sql.SQLException;
-import java.time.LocalDate;
 
 @Getter @Setter
 public class GrabarGasto extends OXServiceAction<GastoDto> {
@@ -24,6 +21,7 @@ public class GrabarGasto extends OXServiceAction<GastoDto> {
         return GeneralUtil.INSTANCE.parseViewAlDto(new GastoDto(), getView().getAllValues());
     }
 
+    @SneakyThrows
     @Override
     protected Response invokeService(GastoDto gastoDto) throws SQLException, IllegalAccessException {
 
