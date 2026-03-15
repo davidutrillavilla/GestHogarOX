@@ -17,7 +17,16 @@ import java.util.UUID;
 @Tab(name = "gasto", properties = "nombreUsuario, ejercicio, mes, fecha, seccionGasto, tipoComercio, nombreEstablecimiento, nombreCiudad, descripcion, importeCompra",
      filter = FiltroSistemaEjercicioMes.class,
      baseCondition = "${ejercicio} = ? and ${mes} = ?")
-@View(name = "gasto", members = "ejercicio, mesEnum, fecha;" +
+@View(members = "ejercicio, mesEnum, fecha;" +
+                ";" +
+                "usuario;" +
+                ";" +
+                "tipoComercioEnum, seccionGastoEnum, establecimiento, ciudad;" +
+                "descripcion" +
+                ";" +
+                "importeCompra;"
+)
+@View(name = "generico", members = "ejercicio, mesEnum, fecha;" +
                                 ";" +
                                 "usuario;" +
                                 ";" +

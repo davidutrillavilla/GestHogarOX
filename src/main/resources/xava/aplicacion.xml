@@ -6,7 +6,7 @@
  
 	<modulo nombre="Gasto">
 		<modelo nombre="Gasto"/>
-		<vista nombre="gasto"/>
+		<vista nombre="generico"/>
 		<tab nombre="gasto"/>
 		<controlador nombre="Gasto"/>
 	</modulo>
